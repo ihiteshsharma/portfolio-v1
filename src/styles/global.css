@@ -1,0 +1,9 @@
+@import url('./resets.css');
+@import url('./Metropolis.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Metropolis', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
