@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #319E77;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: var(--primary-color); */
+}
+
+.main-container-text {
+    width: 70%;
+}
