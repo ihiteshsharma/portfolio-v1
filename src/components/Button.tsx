@@ -1,19 +1,22 @@
-import React, { FC } from 'react'
+import React, { FC } from 'react';
+import Icon from './Icon';
 
-const ButtonDefaultProps = {
-    type: 'primary', // one of primary, secondary, success, warning, error, muted, dark
-    disabled: false,
-    rounded: false,
-    link: false,
-    iconLeft: null,
-    iconRight: null,
-}
+type ButtonProps = {
+  type: 'primary' | 'secondary';
+  label: string;
+  icon?: string;
+  iconPosition?: 'left' | 'right';
+  iconProps?: object
+};
 
-const Button: FC<any> = ({width=24, height=24, color="#000", iconName="circle", className='', tag:Tag='button'}) => {
-    return(
-        <button></button>
-
-    )
-}
+const Button: FC<ButtonProps> = ({ type, label, icon, iconPosition = 'left' }) => {
+  return (
+    <button className={`button ${type}`}>
+      {icon && iconPosition === 'left' && <span className="icon-left">{icon}</span>}
+      <span className="label">{label}</span>
+      {icon && iconPosition === 'right' && <span className="icon-right">{icon}</span>}
+    </button>
+  );
+};
 
 export default Button;
