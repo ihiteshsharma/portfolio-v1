@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     "./src/pages/**/*.{js,jsx,ts,tsx}",
     "./src/components/**/*.{js,jsx,ts,tsx}",
@@ -16,7 +17,7 @@ module.exports = {
       'paperwhite': '#FEF9EF',
     },
     fontFamily: {
-      sans: ['Metropolis', 'sans-serif'],
+      sans: ['Nunito', 'sans-serif'],
       serif: ['DM Serif Display', 'serif'],
     },
     extend: {},

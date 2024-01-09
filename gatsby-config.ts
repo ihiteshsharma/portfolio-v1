@@ -2,8 +2,8 @@ import type { GatsbyConfig } from "gatsby"
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `My Digital Home`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Hitesh Sharma | Freelance Web Developer`,
+    siteUrl: `https://www.hiteshs.dev`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
