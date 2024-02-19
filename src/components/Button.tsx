@@ -1,5 +1,6 @@
 import React from 'react';
 import Icon from './Icon';
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 interface ButtonProps {
     href?: string;
@@ -13,18 +14,16 @@ interface ButtonProps {
 
 // control text properties & background properties via parent class, not defined here to keep defaults
 const Button: React.FC<ButtonProps> = ({ className, text, icon, iconSize, iconColor, href, iconComponent }) => {
-    const handleClick = () => {
-        if (href) {
-            window.open(href, '_blank')
-        }
-    };
+   
 
     return (
-        <button className={`py-4 px-4 my-2 rounded-md flex items-center gap-2 ${className} `} onClick={handleClick}>
-            {iconComponent}
-            {icon && <Icon className='mx-2' iconName={icon} width={iconSize} height={iconSize} color={iconColor} />}
-            <span>{text}</span>
-        </button>
+        <OutboundLink href={href} className={`py-4 px-4 my-2 rounded-md flex items-center gap-2 ${className} `}>
+            <button>
+                {iconComponent}
+                {icon && <Icon className='mx-2' iconName={icon} width={iconSize} height={iconSize} color={iconColor} />}
+                <span>{text}</span>
+            </button>
+        </OutboundLink>
     );
 };
 

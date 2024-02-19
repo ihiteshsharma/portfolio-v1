@@ -26,7 +26,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <Button className='bg-github text-white font-semibold landscape:w-2/3 portrait:w-3/4' iconSize={24} icon="github" iconColor="#fff" text="Work & Projects" href="https://github.com/ihiteshsharma/"/>
             <Button className='bg-youtube text-white font-semibold landscape:w-2/3 portrait:w-3/4' iconSize={24} icon="youtube" iconColor="#fff" text="Vlogs & Tutorials" href="https://www.youtube.com/@hiteshs_dev"/>
             <Button className='bg-white text-black font-semibold landscape:w-2/3 portrait:w-3/4 border-2 border-solid' iconComponent={<img className="mx-2" src="/hashnode.png" width={24} />} text="Blog & Newsletter" href="https://hiteshsharma.hashnode.dev/"/>
-            <Button className='instagram text-white font-semibold landscape:w-2/3 portrait:w-3/4' iconSize={24} icon="instagram" iconColor="#fff" text="Reels & Offtopic" href="https://www.linkedin.com/in/ihiteshsharma/"/>
+            <Button className='instagram text-white font-semibold landscape:w-2/3 portrait:w-3/4' iconSize={24} icon="instagram" iconColor="#fff" text="Reels & Offtopic" href="https://www.instagram.com/hiteshs.dev"/>
           </div>
         </div>
       </div>
