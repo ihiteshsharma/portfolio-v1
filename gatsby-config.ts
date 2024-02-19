@@ -10,7 +10,18 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
-    'gatsby-plugin-postcss'
+    'gatsby-plugin-postcss',
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-VT4G2MXBP2"
+        ],
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
   ],
 }
 
