@@ -17,8 +17,8 @@ const IndexPage: React.FC<PageProps> = () => {
             <p>Cheers :)</p>
             <p className="font-medium">I am always open to talk about new projects, ideas and new collaboration opportunities. Can’t wait to hear from you!</p>
             <div className="flex items-center gap-4">
-              <Button className="bg-progreen text-white font-medium w-fit" text="Schedule 1:1"/>
-              <span className="text-xs font-semibold underline text-progreen">Alternatively, get in touch</span>
+              <Button className="bg-progreen text-white font-medium w-fit" text="Schedule 1:1" href="https://calendly.com/hiteshs_dev/collaboration"/>
+              <span className="text-xs font-semibold underline text-progreen cursor-pointer" onClick={() => window.open('https://www.instagram.com/direct/t/17843926977170591/')}>Alternatively, get in touch</span>
             </div>
           </div>
           <div className="landscape:w-1/2 flex flex-col landscape:items-center justify-around">

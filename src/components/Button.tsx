@@ -17,7 +17,7 @@ const Button: React.FC<ButtonProps> = ({ className, text, icon, iconSize, iconCo
    
 
     return (
-        <OutboundLink href={href} className={`py-4 px-4 my-2 rounded-md flex items-center gap-2 ${className} `}>
+        <OutboundLink href={href} target="_blank" className={`py-4 px-4 my-2 rounded-md flex items-center gap-2 ${className} `}>
             {iconComponent}
             {icon && <Icon className='mx-2' iconName={icon} width={iconSize} height={iconSize} color={iconColor} />}
             <span>{text}</span>
