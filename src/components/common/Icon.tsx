@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import icons from '../assets/icons.json';
+import icons from '../../assets/icons.json';
 
 const getIcon = (key: string) : string => {
     let iconPaths: Record<string,string> = icons;

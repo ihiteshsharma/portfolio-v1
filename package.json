@@ -20,13 +20,16 @@
     "gatsby": "^5.7.0",
     "gatsby-plugin-google-gtag": "^5.13.1",
     "gh-pages": "^6.1.1",
+    "preline": "^2.0.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "@types/node": "^18.14.0",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
+    "@types/react-helmet": "^6.1.11",
     "autoprefixer": "^10.4.13",
     "gatsby-plugin-postcss": "^6.7.0",
     "postcss": "^8.4.21",
