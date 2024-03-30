@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Icon from '../common/Icon';
+import ComingSoon from './ComingSoon';
 
 interface ProjectsProps {
     // Define your component props here
@@ -51,6 +52,18 @@ const projects = [
 ]
 
 const Projects = React.forwardRef<HTMLDivElement, ProjectsProps>((props, ref) => {
+    return (
+        <div ref={props.refProp} className='mx-auto'>
+            <div className="flex justify-center items-center gap-4 mb-8">
+                <Icon iconName="code" width={40} height={40} color="currentColor" />
+                <span className="text-3xl font-bold">Projects</span>
+            </div>
+            <ComingSoon />
+        </div>
+    )
+})
+
+const ProjectsNew = React.forwardRef<HTMLDivElement, ProjectsProps>((props, ref) => {
     const [searchText, setSearchText] = useState('')
     const tagList = ['React', 'Node', 'Express', 'MongoDB', 'API', 'Atlassian', 'Jira', 'Confluence', 'Bitbucket']
     const [projectsCopy, setProjectsCopy] = useState([...projects])

@@ -1,5 +1,6 @@
 import React from 'react'
 import Icon from '../common/Icon'
+import ComingSoon from './ComingSoon';
 
 // Interface for Services component props
 interface BlogProps {
@@ -10,6 +11,19 @@ interface BlogProps {
 }
 
 const Blog = React.forwardRef<HTMLDivElement, BlogProps>((props, ref) => {
+
+    return (
+        <div ref={props.refProp} className='mx-auto'>
+             <div className="flex justify-center items-center gap-4 mb-8">
+                <Icon iconName="book" width={36} height={36} color="currentColor" />
+                <span className="text-3xl font-bold">Blog</span>
+            </div>
+            <ComingSoon />
+        </div>
+    )
+})
+
+const BlogNew = React.forwardRef<HTMLDivElement, BlogProps>((props, ref) => {
 
     return (
         <div ref={props.refProp}>
