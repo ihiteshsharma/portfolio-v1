@@ -12,7 +12,7 @@ const Header: React.FC<HeaderProps> = ({ scrollToVision, scrollToServices, scrol
   const menuItems = [
     { 'icon': null, 'label': 'Vision', 'href': '#vision', ref: scrollToVision },
     { 'icon': null, 'label': 'Services', 'href': '#services', ref: scrollToServices },
-    { 'icon': null, 'label': 'Work', 'href': '#work', ref: scrollToProjects },
+    { 'icon': null, 'label': 'Projects', 'href': '#work', ref: scrollToProjects },
     { 'icon': null, 'label': 'Blog', 'href': '#blog', ref: scrollToBlog },
   ]
   return (

@@ -1,9 +1,9 @@
 import React from "react"
 import Icon from "../common/Icon"
 
-const renderGridItem = (percent: string, label: string) => {
+const renderGridItem = (percent: string, label: string, idx: number) => {
     return (
-        <div>
+        <div key={idx}>
             <p className="text-xl font-semibold text-emerald-600 lg:text-3xl">{percent}</p>
             <p className="mt-1 text-gray-500 text-sm lg:text-md">{label}</p>
         </div>
@@ -41,7 +41,7 @@ const Stats: React.FC = () => {
 
             <div className="lg:col-span-8 relative lg:before:absolute lg:before:top-0 lg:before:-start-12 lg:before:w-px lg:before:h-full lg:before:bg-gray-200 lg:before:dark:bg-gray-700">
                 <div className="grid gap-6 grid-cols-2 md:grid-cols-4 lg:grid-cols-3 sm:gap-8">
-                    {stats.map((stat) => renderGridItem(stat.number, stat.label))}
+                    {stats.map((stat, idx) => renderGridItem(stat.number, stat.label, idx))}
                 </div>
             </div>
         </div>

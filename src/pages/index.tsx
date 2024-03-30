@@ -8,11 +8,13 @@ import Stats from "../components/website/Stats";
 import Projects from "../components/website/Projects";
 import Services from "../components/website/Services";
 import Vision from "../components/website/Vision";
+import Blog from "../components/website/Blog";
 
 const IndexPage: React.FC<PageProps> = () => {
   const visionRef = useRef<HTMLDivElement>(null)
   const servicesRef = useRef<HTMLDivElement>(null)
   const projectsRef = useRef<HTMLDivElement>(null)
+  const blogRef = useRef<HTMLDivElement>(null)
 
   // Function to handle smooth scrolling
   const scrollToRef = (ref:any) => {
@@ -26,13 +28,14 @@ const IndexPage: React.FC<PageProps> = () => {
         scrollToVision={() => scrollToRef(visionRef)}
         scrollToServices={() => scrollToRef(servicesRef)}
         scrollToProjects={() => scrollToRef(projectsRef)}
-        scrollToBlog={() => {}}
+        scrollToBlog={() => scrollToRef(blogRef)}
       />
       <Hero />
       <Stats />
       <Vision refProp={visionRef} />
       <Services refProp={servicesRef}/>
       <Projects refProp={projectsRef} />
+      <Blog refProp={blogRef} />
       <Footer />
     </div>
   )
