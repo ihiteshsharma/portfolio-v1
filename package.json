@@ -17,7 +17,9 @@
     "deploy:ci": "gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/ihiteshsharma/portfolio-v1"
   },
   "dependencies": {
+    "decap-cms-app": "^3.1.6",
     "gatsby": "^5.7.0",
+    "gatsby-plugin-decap-cms": "^4.0.4",
     "gatsby-plugin-google-gtag": "^5.13.1",
     "gh-pages": "^6.1.1",
     "preline": "^2.0.3",

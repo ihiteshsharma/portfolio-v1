@@ -4,7 +4,6 @@ import Icon from '../common/Icon';
 interface ProjectsProps {
     // Define your component props here
     refProp: React.RefObject<HTMLDivElement>;
-
 }
 
 // power this list in real time 
@@ -71,7 +70,6 @@ const Projects = React.forwardRef<HTMLDivElement, ProjectsProps>((props, ref) =>
         }
     }, [checkedTags])
     const addToSelectedTags = (e:any) => {
-        console.log(checkedTags)
         // add to selected tags if not added already
         if(e.target.checked){
             setCheckedTags([...checkedTags, e.target.value])
@@ -133,12 +131,6 @@ const Projects = React.forwardRef<HTMLDivElement, ProjectsProps>((props, ref) =>
                     </div>
                 </div>
             </div>
-            {/* <p className='mt-4 text-center italic text-sm'>Use tags below to filter the projects</p>
-            <div className='mt-4 flex justify-center items-center'>
-                {tagList.map((tag, idx) => (
-                    <span key={idx} className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-800 text-gray-800 hover:bg-emerald-700 hover:text-white hover:cursor-pointer">{tag}</span>
-                ))}
-            </div> */}
             <div className="py-10 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {projectsCopy.length === 0 && <div className="col-span-12 text-2xl text-center text-gray-500 dark:text-gray-400">No projects found</div>}
                 {projectsCopy.map((project, idx) => (

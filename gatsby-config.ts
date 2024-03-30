@@ -11,6 +11,7 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     'gatsby-plugin-postcss',
+    'gatsby-plugin-decap-cms',
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {

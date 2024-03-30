@@ -16,6 +16,7 @@ const Services = React.forwardRef<HTMLDivElement, ServicesProps>((props, ref) =>
             'subtitle': 'Primarily dealing with all things web, from front-end to back-end, and everything in between.',
             'whats_included': ['Frontend Development', 'Backend Development', 'Database Management', 'DB Query Optimisations', 'Pagespeed Improvements for increasing front-end performance',  'API Integrations', 'Plugin Development', 'SaaS Development', 'CI/CD Pipelines & Automated builds', 'Microservices', 'Unit Testing & Code Reviews', 'Load Testing & Metrics Reporting', 'Scaling existing APIs & Web apps', 'Code Optimization & Performance Tuning', 'Security & Compliance - ISO 27001 & GDPR', 'Documentation & Reporting', 'Git & Code versioning', 'Handling deployments on AWS & GCP'],
             'calendly_link': '',
+            'isPopular': false
         },
         {
             'title': 'AI Engineer - GenAI LLM Apps ',
@@ -34,7 +35,7 @@ const Services = React.forwardRef<HTMLDivElement, ServicesProps>((props, ref) =>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
                 {roles.map((role, idx) => (
-                    <div key={idx} className={`${role.isPopular && 'border-2 border-solid border-emerald-300 shadow-xl'} p-4 relative flex flex-col z-10 bg-white rounded-xl md:p-10 border-2 border-solid border-transparent hover:border-emerald-700`}>
+                    <div key={idx} className={`${role.isPopular && 'border-2 border-solid border-emerald-500 shadow-xl'} p-4 relative flex flex-col z-10 bg-white rounded-xl md:p-10 border-2 border-solid border-transparent hover:border-emerald-700`}>
                         <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">{role.title}</h3>
                         <div className="text-sm text-gray-500">{role.subtitle}</div>
                         {role.isPopular && <span className="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3">Most popular</span>}
